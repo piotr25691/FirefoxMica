@@ -1,0 +1,123 @@
+#main-window {
+	background-color: transparent !important;
+	-moz-appearance: -moz-win-borderless-glass !important;
+}
+
+#navigator-toolbox {
+	background: transparent !important;
+}
+
+#TabsToolbar {
+	background-image: none !important; /* windows 7 */
+}
+
+/* for use with the status bar script in https://github.com/xiaoxiaoflood/firefox-scripts */
+#main-window:not([inFullscreen="true"]) #browser-bottombox:not(:empty) {
+	height: 22px !important;
+	padding-top: 0px !important;
+	background-color: transparent !important;
+}
+
+#status-bar {
+	height: 22px !important;
+	margin-top: -4px !important;
+	background-color: transparent !important;
+}
+
+/* fix duplicate title bar buttons */
+.titlebar-buttonbox-container {
+	display: block;
+}
+
+.titlebar-buttonbox {
+	height: 30px;
+}
+
+.titlebar-button:not(.titlebar-close),
+.titlebar-close:not(:hover) {
+	list-style-image: none !important;
+}
+
+/* referenced from what FF does when using some persona themes */
+:root {
+	--toolbar-bgcolor: transparent !important;
+	--toolbar-field-background-color: white !important;
+	--urlbar-box-bgcolor: var(--button-bgcolor) !important;
+	/* FF button bg in urlbar */
+	--chrome-content-separator-color: color-mix(in srgb, currentColor 17%, transparent) !important;
+	/* navbar bottom line */
+	--button-hover-bgcolor: color-mix(in srgb, currentColor 17%, transparent) !important;
+	--button-active-bgcolor: color-mix(in srgb, currentColor 30%, transparent) !important;
+}
+
+#urlbar-background,
+#searchbar {
+	background-color: transparent !important;
+}
+
+#urlbar[open="true"]>#urlbar-background {
+	background-color: white !important;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--toolbar-bgcolor: transparent !important;
+		--toolbar-field-background-color: black !important;
+	}
+
+	#urlbar-background,
+	#searchbar {
+		background-color: transparent !important;
+	}
+
+	#urlbar[open="true"]>#urlbar-background {
+		background-color: black !important;
+	}
+
+	#urlbar:focus-within>#urlbar-background {
+		background-color: black !important;
+		outline: none;
+	}
+}
+
+#nav-bar {
+	box-shadow: 0 calc(-1 * var(--tabs-navbar-shadow-size)) 0 var(--lwt-tabs-border-color, color-mix(in srgb, currentColor 17%, transparent)) !important;
+	/* navbar top line */
+	color: var(--toolbar-color) !important;
+}
+
+.tab-background[selected="true"] {
+	background-color: transparent !important;
+	background-image: linear-gradient(transparent, transparent), linear-gradient(var(--toolbar-bgcolor), var(--toolbar-bgcolor)), var(--lwt-header-image, none) !important;
+}
+
+/* fix title bar buttons when using custom themes eg. rectify11 */
+.titlebar-button {
+	background: transparent !important;
+	stroke: currentColor !important;
+	transition: 300ms ease;
+}
+
+.titlebar-button:hover {
+	background-color: hsla(0, 0%, 100%, .32) !important;
+}
+
+.titlebar-close:hover {
+	background-color: hsl(355, 86%, 49%) !important;
+}
+
+.titlebar-close {
+	list-style-image: url(chrome://browser/skin/window-controls/close.svg) !important;
+}
+
+.titlebar-min {
+	list-style-image: url(chrome://browser/skin/window-controls/minimize.svg) !important;
+}
+
+.titlebar-max {
+	list-style-image: url(chrome://browser/skin/window-controls/maximize.svg) !important;
+}
+
+.titlebar-restore {
+	list-style-image: url(chrome://browser/skin/window-controls/restore.svg) !important;
+}
