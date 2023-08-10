@@ -8,7 +8,8 @@ A userChrome.css file that enables Mica to work on your Firefox browser.
 *<sup><sub>Optionally for improved looks.</sup></sub>
 
 ## Screenshot
-![image](https://github.com/piotr25691/FirefoxMica/assets/71488561/4ab07711-166f-401d-a969-ca66e805e1be)
+![image](https://github.com/piotr25691/FirefoxMica/assets/71488561/00c5b56e-f5a5-46ca-9551-dc11c52fa8b0)
+
 
 ## How to install?
 1. Turn on the `toolkit.legacyUserProfileCustomizations.stylesheets` setting in `about:config`
