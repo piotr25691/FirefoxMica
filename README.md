@@ -4,7 +4,8 @@ A userChrome.css file that enables Mica to work on your Firefox browser.
 ## Requirements
 - [Windows 11](https://microsoft.com/en-us/software-download/windows11)
 - [Firefox 115.1.0esr](https://ftp.mozilla.org/pub/firefox/releases/115.1.0esr/)
-- [Rectify11](https://github.com/Rectify11/Installer/releases/tag/v3.0-rc1)*
+- [MicaForEveryone](https://github.com/MicaForEveryone/MicaForEveryone)
+- [Rectify11](https://github.com/Rectify11/Installer/releases/tag/v-3.0)*
 
 *<sup><sub>Optionally for improved looks.</sup></sub>
 
